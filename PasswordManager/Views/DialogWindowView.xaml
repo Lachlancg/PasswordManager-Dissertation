@@ -1,0 +1,50 @@
+﻿<Window x:Class="PasswordManagerClient.Views.DialogWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordManagerClient.Views"
+        xmlns:viewModels="clr-namespace:PasswordManagerClient.ViewModels"
+        mc:Ignorable="d"
+        Title="DialogWindowView" SizeToContent="WidthAndHeight"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterOwner">
+    <!-- Begin Reference - Modified Code
+    Aleksei Pavlov. ‘Dialogs In WPF (MVVM)’. Accessed 22 January 2021. https://www.c-sharpcorner.com/article/dialogs-in-wpf-mvvm/.
+    -->
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type viewModels:CategoryAddDialogViewModel}">
+            <local:CategoryAddDialogView></local:CategoryAddDialogView>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:CategoryDeleteDialogViewModel}">
+            <local:DeleteDialogView></local:DeleteDialogView>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:SiteDeleteDialogViewModel}">
+            <local:DeleteDialogView></local:DeleteDialogView>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:AccountDeleteDialogViewModel}">
+            <local:DeleteDialogView></local:DeleteDialogView>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:CategoryDeleteWarningViewModel}">
+            <local:CategoryDeleteWarningDialogView></local:CategoryDeleteWarningDialogView>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:PasswordGeneratorViewModel}">
+            <local:PasswordGeneratorDialogView></local:PasswordGeneratorDialogView>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:PasswordChangeViewModel}">
+            <local:PasswordChangeDialogView></local:PasswordChangeDialogView>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:GoOnlineViewModel}">
+            <local:GoOnlineDialogView></local:GoOnlineDialogView>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:AddRfidCardDialogViewModel}">
+            <local:AddRfidCardDialogView></local:AddRfidCardDialogView>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:RfidChangeViewModel}">
+            <local:RfidChangeDialogView></local:RfidChangeDialogView>
+        </DataTemplate>
+        <!--End Reference-->
+    </Window.Resources>
+    <ContentControl x:Name="DialogPresenter" Content="{Binding}"/>
+</Window>

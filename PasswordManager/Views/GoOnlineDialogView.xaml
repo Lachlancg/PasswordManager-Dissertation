@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="PasswordManagerClient.Views.GoOnlineDialogView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PasswordManagerClient.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="#C5C6C7">
+    <Grid>
+        <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+
+        </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+      <StackPanel Width="200" Height="Auto">
+            <TextBlock Text="Email" Margin="0,50,0,0"></TextBlock>
+            <TextBox Text="{Binding EmailAddress, UpdateSourceTrigger=PropertyChanged}"  Width="200" />
+                <TextBlock Text="Master Password"></TextBlock>
+            <TextBox FontFamily="pack://application:,,,/Fonts/#password"  Text="{Binding Password, UpdateSourceTrigger=PropertyChanged}"  Width="200" />
+            </StackPanel>
+        <TextBlock Grid.Row="3" Text="RFID 6 Digit Pin" Margin="150,10,0,0" />
+        <StackPanel Grid.Row="4" Orientation="Horizontal" Width="200" Height="Auto">
+            <TextBox FontFamily="pack://application:,,,/Fonts/#password" Text="{Binding RFIDPin, UpdateSourceTrigger=PropertyChanged}" Height="20" Width="100" HorizontalAlignment="Left" />
+            <Button Background="{Binding RfidColour}" CommandParameter="{Binding}" Command="{Binding LoadRfidCommand}"  Margin="0,10,0,10" Width="100">Load RFID</Button>
+        </StackPanel>
+
+        <DockPanel Grid.Row="5">
+            <Button CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}" Command="{Binding CancelCommand}"  DockPanel.Dock="Left" Margin="10"  Height="32" Width="220">Cancel</Button>
+            <Button IsDefault="True" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}" Command="{Binding CopyCommand}" DockPanel.Dock="Right" Margin="10"  Height="32" Width="240">Login</Button>
+        </DockPanel>
+
+        </Grid>
+</UserControl>

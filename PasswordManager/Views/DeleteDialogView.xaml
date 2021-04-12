@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="PasswordManagerClient.Views.DeleteDialogView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PasswordManagerClient.Views"
+             xmlns:ui="http://schemas.modernwpf.com/2019"
+             mc:Ignorable="d" 
+             d:DesignHeight="320" d:DesignWidth="320"
+             Background="#C5C6C7">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="288"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ui:SimpleStackPanel Grid.Row="1" Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Description}" FontSize="20" Margin="10"/>
+                <!--<TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding ItemName}" FontSize="20"/>-->
+                <Grid Grid.Row="4" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="144"></ColumnDefinition>
+                        <ColumnDefinition Width="144"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Column="0" Margin="0,3,0,0"  CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}" Command="{Binding DeleteCategory}" HorizontalAlignment="Center" Width="144">Delete</Button>
+                    <Button Grid.Column="1" Margin="0,3,0,0"  CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}" Command="{Binding CancelCategory}" HorizontalAlignment="Center" Width="144">Cancel</Button>
+                </Grid>
+            </Grid>
+        </ui:SimpleStackPanel>
+    </Grid>
+</UserControl>
