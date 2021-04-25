@@ -4979,11 +4979,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lachl\\source\\repos\\PasswordManager\\PasswordManagerClient.UnitTests\\PasswordManagerClient.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\lachl\\Documents\\GitHub\\PasswordManager\\PasswordManagerClient.UnitTests\\PasswordManagerClient.UnitTests.csproj",
       "projectName": "PasswordManagerClient.UnitTests",
-      "projectPath": "C:\\Users\\lachl\\source\\repos\\PasswordManager\\PasswordManagerClient.UnitTests\\PasswordManagerClient.UnitTests.csproj",
+      "projectPath": "C:\\Users\\lachl\\Documents\\GitHub\\PasswordManager\\PasswordManagerClient.UnitTests\\PasswordManagerClient.UnitTests.csproj",
       "packagesPath": "C:\\Users\\lachl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lachl\\source\\repos\\PasswordManager\\PasswordManagerClient.UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\lachl\\Documents\\GitHub\\PasswordManager\\PasswordManagerClient.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lachl\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5000,8 +5000,8 @@
         "net5.0-windows10.0.18362": {
           "targetAlias": "net5.0-windows10.0.18362.0",
           "projectReferences": {
-            "C:\\Users\\lachl\\source\\repos\\PasswordManager\\PasswordManager\\PasswordManagerClient.csproj": {
-              "projectPath": "C:\\Users\\lachl\\source\\repos\\PasswordManager\\PasswordManager\\PasswordManagerClient.csproj"
+            "C:\\Users\\lachl\\Documents\\GitHub\\PasswordManager\\PasswordManager\\PasswordManagerClient.csproj": {
+              "projectPath": "C:\\Users\\lachl\\Documents\\GitHub\\PasswordManager\\PasswordManager\\PasswordManagerClient.csproj"
             }
           }
         }

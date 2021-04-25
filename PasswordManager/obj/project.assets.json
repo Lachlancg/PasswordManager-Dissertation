@@ -4832,11 +4832,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lachl\\source\\repos\\PasswordManager\\PasswordManager\\PasswordManagerClient.csproj",
+      "projectUniqueName": "C:\\Users\\lachl\\Documents\\GitHub\\PasswordManager\\PasswordManager\\PasswordManagerClient.csproj",
       "projectName": "PasswordManagerClient",
-      "projectPath": "C:\\Users\\lachl\\source\\repos\\PasswordManager\\PasswordManager\\PasswordManagerClient.csproj",
+      "projectPath": "C:\\Users\\lachl\\Documents\\GitHub\\PasswordManager\\PasswordManager\\PasswordManagerClient.csproj",
       "packagesPath": "C:\\Users\\lachl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lachl\\source\\repos\\PasswordManager\\PasswordManager\\obj\\",
+      "outputPath": "C:\\Users\\lachl\\Documents\\GitHub\\PasswordManager\\PasswordManager\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lachl\\AppData\\Roaming\\NuGet\\NuGet.Config",

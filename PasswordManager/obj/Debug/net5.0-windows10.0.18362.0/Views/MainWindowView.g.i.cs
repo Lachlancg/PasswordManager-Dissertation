@@ -76,7 +76,7 @@ namespace PasswordManagerClient.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PasswordManagerClient;component/views/mainwindowview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PasswordManagerClient;V1.0.0.0;component/views/mainwindowview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\MainWindowView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

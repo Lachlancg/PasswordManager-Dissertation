@@ -53,7 +53,7 @@ namespace PasswordManagerClient.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PasswordManagerClient;component/views/rfidchangedialogview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PasswordManagerClient;V1.0.0.0;component/views/rfidchangedialogview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\RfidChangeDialogView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

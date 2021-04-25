@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z6VT7uAyhbuQ2GTv5DjUd+SgfTvoajNviagdr0Daf+xkf1wd5h4CGx3Ecx93/ou8t63AUmNnVg71n6lYC2jlWA==",
+  "dgSpecHash": "3YI/2thPwgplCH1S0Sxoc8U7w5J7eO2K9LkOTLAF/PKjPv5zy9DXk807w5/c/R3ez3YoPMGh/JsMqq/i8nRe+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lachl\\source\\repos\\PasswordManager\\PasswordManagerAPI.IntegrationTests\\PasswordManagerAPI.IntegrationTests.csproj",
+  "projectFilePath": "C:\\Users\\lachl\\Documents\\GitHub\\PasswordManager\\PasswordManagerAPI.IntegrationTests\\PasswordManagerAPI.IntegrationTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lachl\\.nuget\\packages\\konscious.security.cryptography.argon2\\1.2.1\\konscious.security.cryptography.argon2.1.2.1.nupkg.sha512",
     "C:\\Users\\lachl\\.nuget\\packages\\konscious.security.cryptography.blake2\\1.0.9\\konscious.security.cryptography.blake2.1.0.9.nupkg.sha512",
